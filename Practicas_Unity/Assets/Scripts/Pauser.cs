@@ -18,16 +18,17 @@ public class Pauser : MonoBehaviour {
         else
             Time.timeScale = 1;
     }
+    public void ResetGame()
+    {
+        Debug.Log("Reiniciar Jugeo");
+        SceneManager.LoadScene(0);
+    }
     public void continueGame()
     {
         Debug.Log("Continuar");
         paused = false;
         pausePanel.SetActive(paused);
     }
-    public void ResetGame()
-    {
-        Debug.Log("Reiniciar Jugeo");
-        SceneManager.LoadScene(0);
-    }
+   
 }
 
