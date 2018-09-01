@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Pauser : MonoBehaviour {
     private bool paused = false;
     public GameObject pausePanel;
-    // Update is called once per frame
+    public GameObject pauseMusic;
+
     void Update() {
         if (Input.GetKeyUp(KeyCode.P))
         {
+            
             paused = !paused;
             pausePanel.SetActive(paused);
         }
@@ -23,12 +26,20 @@ public class Pauser : MonoBehaviour {
         Debug.Log("Reiniciar Jugeo");
         SceneManager.LoadScene(0);
     }
-    public void continueGame()
+    public void ContinueGame()
     {
         Debug.Log("Continuar");
         paused = false;
         pausePanel.SetActive(paused);
     }
-   
+    public void MusicGame()
+    {
+        Debug.Log("Music");
+
+        
+    }
+  
+
+
 }
 
