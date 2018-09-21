@@ -6,8 +6,10 @@ public class InteractableChest : MonoBehaviour
 {
     public Color color;
     public GameObject inPanel;
+    public GameObject inventoryPanel;
+    public GameObject invPanel;
     private bool isPlayerIn = false;
-    
+
 
     private void Start()
     {
@@ -39,12 +41,16 @@ public class InteractableChest : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inPanel.SetActive(false);
+            invPanel.SetActive(false);
+            inventoryPanel.SetActive(false);
             isPlayerIn = false;
         }
     }
     public void Open ()
     {
-            Destroy(this.gameObject);
-        }
+        inventoryPanel.SetActive(true);
+        invPanel.SetActive(true);
+
+    }
     
 }
