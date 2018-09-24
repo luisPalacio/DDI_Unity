@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour
     {
         transform.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
 
-        if(Input.GetKeyDown(KeyCode.I) && isPlayerInside)
+        if(Input.GetKeyDown(KeyCode.B) && isPlayerInside)
         {
             gameObject.GetComponent<Renderer>().material.color = color;
         }
