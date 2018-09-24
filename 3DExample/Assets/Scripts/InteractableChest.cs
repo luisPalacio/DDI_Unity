@@ -8,6 +8,7 @@ public class InteractableChest : MonoBehaviour
     public GameObject inPanel;
     public GameObject inventoryPanel;
     public GameObject invPanel;
+	public GameObject SpacePanel;
     private bool isPlayerIn = false;
 
 
@@ -31,6 +32,7 @@ public class InteractableChest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+			
             inPanel.SetActive(true);
             isPlayerIn = true;
         }
@@ -40,6 +42,7 @@ public class InteractableChest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+			SpacePanel.SetActive(false);
             inPanel.SetActive(false);
             invPanel.SetActive(false);
             inventoryPanel.SetActive(false);
@@ -48,6 +51,7 @@ public class InteractableChest : MonoBehaviour
     }
     public void Open ()
     {
+		SpacePanel.SetActive(true);
         inventoryPanel.SetActive(true);
         invPanel.SetActive(true);
 
