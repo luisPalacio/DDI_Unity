@@ -33,7 +33,7 @@ public class Pauser : MonoBehaviour
     public void ResetGame()
     {
         Debug.Log("ResetGame...");
-        SceneManager.LoadScene("Level_Modified");
+        SceneManager.LoadScene("rockFree");
     }
 
     public void MuteMusic()

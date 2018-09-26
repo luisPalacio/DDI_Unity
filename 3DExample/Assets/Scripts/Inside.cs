@@ -15,6 +15,7 @@ public class Inside : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         myScript = gameObject.GetComponent<CarController>();
         myScript2 = gameObject.GetComponent<CarUserControl>();
         persona.SetActive(true);
@@ -33,6 +34,11 @@ private void Update()
         if (Input.GetKeyDown(KeyCode.O) && isPlayerIn)
         {
             Open();
+
+        }
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerIn)
+        {
+            Exit();
 
         }
     }
@@ -61,6 +67,16 @@ private void Update()
         persona.SetActive(false);
         car.SetActive(true);
         Camera_Carro.enabled = true;
+
+    }
+    public void Exit()
+    {
+        Camera_Pers.enabled = true;
+        persona.SetActive(true);
+        car.SetActive(true);
+        myScript.enabled = !myScript.enabled;
+        myScript2.enabled = !myScript2.enabled;
+        Camera_Carro.enabled = false;
 
     }
 }

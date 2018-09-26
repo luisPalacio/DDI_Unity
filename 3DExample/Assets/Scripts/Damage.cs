@@ -17,7 +17,7 @@ public class Damage : MonoBehaviour {
     void Update() {
         if (isPlayerInside)
         {
-            Dama(0.09f);
+            Dama(0.05f);
         }
     }
 
