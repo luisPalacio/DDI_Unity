@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 //===============================================================================
 //Copyright (c) 2015 PTC Inc. All Rights Reserved.
 //
@@ -11,6 +12,8 @@
 //Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 //===============================================================================
 
+=======
+>>>>>>> Stashed changes
 Shader "DepthMask" {
    
     SubShader {

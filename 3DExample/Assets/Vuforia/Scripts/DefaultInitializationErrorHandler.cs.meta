@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 fileFormatVersion: 2
 guid: c47f92041efbb4b429a4eafca855ebe3
 timeCreated: 1493021435
@@ -10,3 +11,7 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 1
+guid: c47f92041efbb4b429a4eafca855ebe3
+>>>>>>> Stashed changes

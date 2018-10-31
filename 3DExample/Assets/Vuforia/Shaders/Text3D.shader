@@ -1,9 +1,15 @@
+<<<<<<< Updated upstream
 //========================================================================
 //Copyright (c) 2013-2014 Qualcomm Connected Experiences, Inc.
 //All Rights Reserved.
 //Confidential and Proprietary - Protected under copyright and other laws.
 //========================================================================
 
+=======
+//Copyright (c) 2013-2014 Qualcomm Connected Experiences, Inc.
+//All Rights Reserved.
+//Confidential and Proprietary - Protected under copyright and other laws.
+>>>>>>> Stashed changes
 Shader "Custom/Text3D" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
