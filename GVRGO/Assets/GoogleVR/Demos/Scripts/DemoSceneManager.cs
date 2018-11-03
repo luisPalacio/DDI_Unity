@@ -17,6 +17,8 @@ namespace GoogleVR.Demos {
 
   // Ensures correct app and scene setup.
   public class DemoSceneManager : MonoBehaviour {
+        public Transform player;
+        public float playerHeight = 1.6f;
     void Start() {
       Input.backButtonLeavesApp = true;
     }
@@ -27,5 +29,9 @@ namespace GoogleVR.Demos {
         Application.Quit();
       }
     }
+        public void TeleportLocation(Vector3 newPosition)
+        {
+            player.position = newPosition;
+        }
   }
 }
